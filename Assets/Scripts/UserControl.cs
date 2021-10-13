@@ -149,6 +149,12 @@ public class UserControl : MonoBehaviour
                     MoveCommand cmd = new MoveCommand(m_SelectedUnit.CurrentCell, clickedCell);
                     CommandManager.Instance.AddCommand(cmd);
                 }
+                else
+                {
+                    // we're capturing the unit there!
+                    CaptureCommand command = new CaptureCommand(m_SelectedUnit.CurrentCell, unit.CurrentCell);
+                    CommandManager.Instance.AddCommand(command);
+                }
             }
         }
 

@@ -142,7 +142,7 @@ public class Gameboard : MonoBehaviour
     {
         u.CurrentCell = new Vector3Int(-1,-1, -1);
         Gameboard.Instance.AnimationSystem.NewAnim(u.transform,
-            u.Side == Unit.Team.Black ? new Vector3(-1.0f, 0.0f, 5.0f) : new Vector3(11.0f, 0.0f, 5.0f),
+            u.Side == Unit.Team.Black ? new Vector3(-1.85f, -0.56f, 4.0f) : new Vector3(9.78f, -0.6f, 4f),
             10.0f);
     }
 
